@@ -1,0 +1,107 @@
+\documentclass{resume}
+\usepackage{lmodern}
+\usepackage{fontspec}
+
+\pagenumbering{gobble} 
+
+\setmainfont{Lato}[
+    Extension = .ttf,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic,
+    BoldItalicFont = *-BoldItalic
+]
+
+\begin{document}
+\fontspec{Lato}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     HEADER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Xiaomin}
+{Liu}
+{\href{https://linkedin.com/in/xiaomin-liu-liu}{linkedin.com/in/xiaomin-liu-liu}}
+{\href{mailto:xl4624@nyu.edu}{xl4624@nyu.edu}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+
+\subsection{New York University} \positiondate{\textit{May 2026}}\\
+\fontsize{10.5pt}{12pt}\selectfont
+\textbf{Bachelor of Arts}, Computer Science, \textbf{Minor} in Mathematics \hfill 
+\textbf{GPA:} 3.84 \\
+\hspace*{8.5mm}\textbf{Honors:} Presidential Honors Scholars Program (Top 10\%) | CAS Scholarship (full-ride) \\
+\hspace*{8.5mm}\textbf{Activities:} BUGS@NYU EBoard Member | Tech@NYU Tech Trek Mentor | Barbell@NYU Member
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+
+\subsection{Niantic}- Incoming Software Engineering Intern \positiondate{May 2024}
+
+\subsection{BUGS@NYU}- Software Developer \positiondate{Jan 2024 - Present} \\
+\begin{tightemize}
+    \item Collaborating with a team of 6 to develop a Leetcode Multiplayer open-source platform for students to compete.
+\end{tightemize}
+
+\subsection{Vantage}- Software Engineering Intern \positiondate{July 2023 - Oct 2023} \\
+\technologies{Ruby, Ruby on Rails, JavaScript, HTML, CSS, PostgreSQL, Azure, Temporal, Sentry} \\
+\begin{tightemize}
+    \item Launched \href{https://www.vantage.sh/blog/vantage-launches-azure-active-resources}{\underline{Azure Active Resources}}, a tracking and reporting of Azure resource utilization and costs feature that enables users to filter down on their Azure spending by resource metadata.
+    \item Designed and built a daily Temporal workflow that asynchronously updates \textasciitilde100,000 records for over 6,500 users by leveraging Azure's REST APIs to fetch data from more than 30 different Azure services.
+    \item Integrated a line graph using HTML and JavaScript to display aggregated related resource costs in 30 day periods.
+    \item Minimized issues reported by Sentry logs by writing and maintaining 40 unit tests and documenting how to add new Azure service types.
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section
+[\href{http://github.com/xl4624}{\raisebox{.4mm}{[github.com/xl4624]\hspace{3mm}}}]
+{Projects}
+
+\subsection{Chess with Friends} \\
+\technologies{Python, Flask, JavaScript, PostgreSQL, HTML, CSS, Docker} \\
+% \fontsize{10.5pt}{12pt}\selectfont
+\begin{tightemize}
+    \item Spearheaded a team of 3 to develop a full stack online chess web application using Flask and websockets to deliver asynchronous board updates between players.
+    \item Implemented a chat feature between players and spectators and a dynamic move history that updates in real-time using JavaScript, HTML, and CSS.
+    \item Directed project management efforts by delegating tasks, conducting code reviews, and documenting/testing the codebase.
+\end{tightemize}
+
+\subsection{Debugging Memory Allocator} \\
+\technologies{C++} \\
+% \fontsize{10.5pt}{12pt}\selectfont
+\begin{tightemize}
+    \item Created a custom memory allocator using C++ that supports malloc, free, and realloc functions, capuring memory leaks and buffer overflows.
+    \item Utilized a linear, sorted free list to manage free memory blocks and implemnted methods for splitting and coalescing blocks using pointer arithmetic.
+\end{tightemize}
+
+\subsection{sudo ku} \\
+\technologies{Go, JSON, HTTP} \\
+% \fontsize{10.5pt}{12pt}\selectfont
+\begin{tightemize}
+    \item Built a CLI web scraper that fetches and parses the latest Sudoku puzzles from \href{https://www.sudoku.au}{\underline{sudoku.au}} and solves them using a depth-first search backtracking algorithm.
+\end{tightemize}
+
+\subsection{COVID-19 Visualization} \\
+\technologies{Python, pandas, matplotlib} \\
+% \fontsize{10.5pt}{12pt}\selectfont
+\begin{tightemize}
+    \item Analyzed and visualized COVID-19 data from the CDC COVID Data Tracker using pandas and matplotlib to create a choropleth map to track the number of cases and deaths in the US.
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Skills
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+
+\fontsize{10.5pt}{12pt}\selectfont
+\vspace{-1mm}
+\textbf{Languages}\hspace{1mm} Python, Java, C++, JavaScript/TypeScript, Ruby, SQL, HTML, SQL, CSS, Lua, Bash, LaTeX \\
+\textbf{Frameworks and Libraries}\hspace{1mm} Ruby on Rails, React, Flask, pandas, NumPy, Node.js, PostgreSQL, Express, Django, Bootstrap, jQuery, Mocha, RSpec \\
+\textbf{Technologies}\hspace{1mm} Git, Unix, Docker, Azure, AWS, Sentry, Temporal, Postman, Vim, Visual Studio Code
+
+\end{document}
