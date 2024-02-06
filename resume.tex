@@ -2,7 +2,7 @@
 \usepackage{lmodern}
 \usepackage{fontspec}
 
-\pagenumbering{gobble} 
+% \pagenumbering{gobble} 
 
 \setmainfont{Lato}[
     Extension = .ttf,
@@ -14,6 +14,7 @@
 
 \begin{document}
 \fontspec{Lato}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     HEADER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -32,7 +33,8 @@
 \textbf{Bachelor of Arts}, Computer Science, \textbf{Minor} in Mathematics \hfill 
 \textbf{GPA:} 3.84 \\
 \hspace*{8.5mm}\textbf{Honors:} Presidential Honors Scholars Program (Top 10\%) | CAS Scholarship (full-ride) \\
-\hspace*{8.5mm}\textbf{Activities:} BUGS@NYU EBoard Member | Tech@NYU Tech Trek Mentor | Barbell@NYU Member
+\hspace*{8.5mm}\textbf{Activities:} BUGS@NYU EBoard Member | Tech@NYU Tech Trek Mentor | Barbell@NYU Member \\
+\hspace*{8.5mm}\textbf{Relevant Coursework:} Data Structures, Basic Algorithms, Computer Systems Organization
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Experience
@@ -64,7 +66,6 @@
 
 \subsection{Chess with Friends} \\
 \technologies{Python, Flask, JavaScript, PostgreSQL, HTML, CSS, Docker} \\
-% \fontsize{10.5pt}{12pt}\selectfont
 \begin{tightemize}
     \item Spearheaded a team of 3 to develop a full stack online chess web application using Flask and websockets to deliver asynchronous board updates between players.
     \item Implemented a chat feature between players and spectators and a dynamic move history that updates in real-time using JavaScript, HTML, and CSS.
@@ -73,22 +74,19 @@
 
 \subsection{Debugging Memory Allocator} \\
 \technologies{C++} \\
-% \fontsize{10.5pt}{12pt}\selectfont
 \begin{tightemize}
-    \item Created a custom memory allocator using C++ that supports malloc, free, and realloc functions, capuring memory leaks and buffer overflows.
+    \item Created a custom memory allocator using C++ that supports malloc, free, and realloc functions, capturing memory leaks and buffer overflows.
     \item Utilized a linear, sorted free list to manage free memory blocks and implemnted methods for splitting and coalescing blocks using pointer arithmetic.
 \end{tightemize}
 
 \subsection{sudo ku} \\
 \technologies{Go, JSON, HTTP} \\
-% \fontsize{10.5pt}{12pt}\selectfont
 \begin{tightemize}
     \item Built a CLI web scraper that fetches and parses the latest Sudoku puzzles from \href{https://www.sudoku.au}{\underline{sudoku.au}} and solves them using a depth-first search backtracking algorithm.
 \end{tightemize}
 
 \subsection{COVID-19 Visualization} \\
-\technologies{Python, pandas, matplotlib} \\
-% \fontsize{10.5pt}{12pt}\selectfont
+\technologies{Python, pandas, Matplotlib} \\
 \begin{tightemize}
     \item Analyzed and visualized COVID-19 data from the CDC COVID Data Tracker using pandas and matplotlib to create a choropleth map to track the number of cases and deaths in the US.
 \end{tightemize}
@@ -100,8 +98,8 @@
 
 \fontsize{10.5pt}{12pt}\selectfont
 \vspace{-1mm}
-\textbf{Languages}\hspace{1mm} Python, Java, C++, JavaScript/TypeScript, Ruby, SQL, HTML, SQL, CSS, Lua, Bash, LaTeX \\
-\textbf{Frameworks and Libraries}\hspace{1mm} Ruby on Rails, React, Flask, pandas, NumPy, Node.js, PostgreSQL, Express, Django, Bootstrap, jQuery, Mocha, RSpec \\
+\textbf{Languages}\hspace{1mm} Python, Java, C++, JavaScript/TypeScript, Ruby, HTML, Lua, SQL, CSS, Bash \\
+\textbf{Frameworks and Libraries}\hspace{1mm} Ruby on Rails, React, Flask, pandas, NumPy, Matplotlib, Node.js, PostgreSQL, Express, Django, Bootstrap, Mocha, RSpec \\
 \textbf{Technologies}\hspace{1mm} Git, Unix, Docker, Azure, AWS, Sentry, Temporal, Postman, Vim, Visual Studio Code
 
 \end{document}
