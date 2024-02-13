@@ -1,16 +1,6 @@
 \documentclass{resume}
 \usepackage{lmodern}
-\usepackage{fontspec}
-
-% \pagenumbering{gobble} 
-
-\setmainfont{Lato}[
-    Extension = .ttf,
-    UprightFont = *-Regular,
-    BoldFont = *-Bold,
-    ItalicFont = *-Italic,
-    BoldItalicFont = *-BoldItalic
-]
+\usepackage{fontawesome}
 
 \begin{document}
 \fontspec{Lato}
@@ -18,8 +8,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     HEADER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\header{Xiaomin}
-{Liu}
+\header{}{Xiaomin Liu}
 {\href{https://linkedin.com/in/xiaomin-liu-liu}{linkedin.com/in/xiaomin-liu-liu}}
 {\href{mailto:xl4624@nyu.edu}{xl4624@nyu.edu}}
 
@@ -28,13 +17,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Education}
 
-\subsection{New York University} \positiondate{\textit{May 2026}}\\
+\subsection{New York University} \positiondate{\textit{May 2026}} \\
 \fontsize{10.5pt}{12pt}\selectfont
 \textbf{Bachelor of Arts}, Computer Science, \textbf{Minor} in Mathematics \hfill 
 \textbf{GPA:} 3.84 \\
 \hspace*{8.5mm}\textbf{Honors:} Presidential Honors Scholars Program (Top 10\%) | CAS Scholarship (full-ride) \\
-\hspace*{8.5mm}\textbf{Activities:} BUGS@NYU EBoard Member | Tech@NYU Tech Trek Mentor | Barbell@NYU Member \\
-\hspace*{8.5mm}\textbf{Relevant Coursework:} Data Structures, Basic Algorithms, Computer Systems Organization
+\hspace*{8.5mm}\textbf{Activities:} BUGS@NYU EBoard Member | Tech@NYU Tech Trek Mentor \\
+\hspace*{8.5mm}\textbf{Relevant Coursework:} Data Structures | Basic Algorithms | Data Management and Analysis (currently taking)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Experience
@@ -45,16 +34,16 @@
 
 \subsection{BUGS@NYU}- Software Developer \positiondate{Jan 2024 - Present} \\
 \begin{tightemize}
-    \item Collaborating with a team of 6 to develop a Leetcode Multiplayer open-source platform for students to compete.
+    \item Collaborating with a team of 6 to develop a Leetcode Multiplayer open-source platform this semester.
 \end{tightemize}
 
 \subsection{Vantage}- Software Engineering Intern \positiondate{July 2023 - Oct 2023} \\
-\technologies{Ruby, Ruby on Rails, JavaScript, HTML, CSS, PostgreSQL, Azure, Temporal, Sentry} \\
+\technologies{Ruby, Ruby on Rails, JavaScript, HTML, PostgreSQL, Azure, Temporal, Sentry} \\
 \begin{tightemize}
-    \item Launched \href{https://www.vantage.sh/blog/vantage-launches-azure-active-resources}{\underline{Azure Active Resources}}, a tracking and reporting of Azure resource utilization and costs feature that enables users to filter down on their Azure spending by resource metadata.
+    \item Launched \href{https://www.vantage.sh/blog/vantage-launches-azure-active-resources}{\underline{Azure Active Resources}}, a tracking and reporting of Azure resource utilization and costs feature that enables users to filter their Azure spending by resource metadata.
     \item Designed and built a daily Temporal workflow that asynchronously updates \textasciitilde100,000 records for over 6,500 users by leveraging Azure's REST APIs to fetch data from more than 30 different Azure services.
     \item Integrated a line graph using HTML and JavaScript to display aggregated related resource costs in 30 day periods.
-    \item Minimized issues reported by Sentry logs by writing and maintaining 40 unit tests and documenting how to add new Azure service types.
+    \item Minimized issues reported by Sentry logs by writing and maintaining 40 unit tests and documented how to add new Azure services for future developers.
 \end{tightemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -64,28 +53,28 @@
 [\href{http://github.com/xl4624}{\raisebox{.4mm}{[github.com/xl4624]\hspace{3mm}}}]
 {Projects}
 
-\subsection{Chess with Friends} \\
+\subsection{Chess with Friends}\href{https://github.com/xl4624/chess-with-friends}{\fontsize{14pt}{14pt}\selectfont\faGithub} \\
 \technologies{Python, Flask, JavaScript, PostgreSQL, HTML, CSS, Docker} \\
 \begin{tightemize}
-    \item Spearheaded a team of 3 to develop a full stack online chess web application using Flask and websockets to deliver asynchronous board updates between players.
-    \item Implemented a chat feature between players and spectators and a dynamic move history that updates in real-time using JavaScript, HTML, and CSS.
-    \item Directed project management efforts by delegating tasks, conducting code reviews, and documenting/testing the codebase.
+    \item Spearheaded a team of 3 to develop an online Multiplayer chess web application using Flask and Socket.IO to handle asynchronous communication between the server and clients.
+    \item Implemented real-time chessboard updates, a chat feature, and a move history table in JavaScript and HTML.
+    \item Directed project management efforts by delegating tasks among team members, conducting code reviews, and thoroughly documenting/testing the codebase.
 \end{tightemize}
 
 \subsection{Debugging Memory Allocator} \\
 \technologies{C++} \\
 \begin{tightemize}
     \item Created a custom memory allocator using C++ that supports malloc, free, and realloc functions, capturing memory leaks and buffer overflows.
-    \item Utilized a linear, sorted free list to manage free memory blocks and implemnted methods for splitting and coalescing blocks using pointer arithmetic.
+    \item Utilized a linear, sorted free list to manage free memory blocks and implemented methods for splitting and coalescing blocks using pointer arithmetic.
 \end{tightemize}
 
-\subsection{sudo ku} \\
+\subsection{sudo ku}\href{https://github.com/xl4624/sudo-ku}{\fontsize{14pt}{14pt}\selectfont\faGithub} \\
 \technologies{Go, JSON, HTTP} \\
 \begin{tightemize}
     \item Built a CLI web scraper that fetches and parses the latest Sudoku puzzles from \href{https://www.sudoku.au}{\underline{sudoku.au}} and solves them using a depth-first search backtracking algorithm.
 \end{tightemize}
 
-\subsection{COVID-19 Visualization} \\
+\subsection{COVID-19 Visualization}\href{https://github.com/xl4624/covid-visualization}{\fontsize{14pt}{14pt}\selectfont\faGithub} \\
 \technologies{Python, pandas, Matplotlib} \\
 \begin{tightemize}
     \item Analyzed and visualized COVID-19 data from the CDC COVID Data Tracker using pandas and matplotlib to create a choropleth map to track the number of cases and deaths in the US.
@@ -98,8 +87,8 @@
 
 \fontsize{10.5pt}{12pt}\selectfont
 \vspace{-1mm}
-\textbf{Languages}\hspace{1mm} Python, Java, C++, JavaScript/TypeScript, Ruby, HTML, Lua, SQL, CSS, Bash \\
-\textbf{Frameworks and Libraries}\hspace{1mm} Ruby on Rails, React, Flask, pandas, NumPy, Matplotlib, Node.js, PostgreSQL, Express, Django, Bootstrap, Mocha, RSpec \\
-\textbf{Technologies}\hspace{1mm} Git, Unix, Docker, Azure, AWS, Sentry, Temporal, Postman, Vim, Visual Studio Code
+\textbf{Languages:}\hspace{1mm} Python, Java, C++, JavaScript/TypeScript, Ruby, HTML, Lua, SQL, CSS, Bash \\
+\textbf{Frameworks and Libraries:}\hspace{1mm} Ruby on Rails, React, Flask, Django, pandas, NumPy, Matplotlib, Node.js, Express \\
+\textbf{Technologies:}\hspace{1mm} Git, Unix, Docker, Azure, AWS(EC2, RDS), Sentry, Temporal, Postman, Vim
 
 \end{document}
