@@ -1,12 +1,14 @@
 \ProvidesClass{resume}
 \LoadClass{article}
 
-\usepackage{tabularx, ragged2e, parskip, fontspec, lmodern, fontawesome}
+\usepackage{tabularx, ragged2e, parskip, fontspec, lmodern}
 \usepackage[hmargin=1.25cm, vmargin=1cm]{geometry}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[hidelinks]{hyperref}
 \usepackage[default]{lato}
+\usepackage[none]{hyphenat}
 \fontspec{Lato}
+\thispagestyle{empty}
 
 \usepackage{selnolig}
 \nolig{ti}{t|i}
