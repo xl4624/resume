@@ -7,6 +7,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage[default]{lato}
 \usepackage[none]{hyphenat}
+\usepackage{enumitem}
 \fontspec{Lato}
 \thispagestyle{empty}
 
@@ -63,6 +64,8 @@
   \fontsize{11pt}{12pt} #1
 }
 
+\setlist[itemize]{leftmargin=*}
+
 \newenvironment{tightemize}{
   \fontsize{10.5pt}{12pt}
   \selectfont
@@ -71,6 +74,6 @@
     \itemsep1pt
     \parskip0pt
     \parsep0pt
-    }{  
+    }{
   \end{itemize}
 }
