@@ -19,11 +19,11 @@
 
 \definecolor{light}{HTML}{707070}
 
-\newcommand{\header}[4]{
+\newcommand{\header}[3]{
   \begin{tabularx}{\linewidth}{@{}X@{}r@{}}
-    {\lato\fontseries{el}\fontsize{35pt}{12pt}\selectfont #1 \lato\fontseries{l}\selectfont#2} &   \\
-    {\lato\fontseries{l}\fontsize{20pt}{12pt}\selectfont #3}                                   &   
-    {\fontsize{12.5pt}{12pt}\selectfont #4}
+    \multicolumn{2}{c}{\lato\fontseries{l}\fontsize{35pt}{12pt}\selectfont#1} \\
+    {\lato\fontseries{l}\fontsize{20pt}{12pt}\selectfont #2} &   
+    {\fontsize{12.5pt}{12pt}\selectfont #3}
   \end{tabularx}
 }
 
