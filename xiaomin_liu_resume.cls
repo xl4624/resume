@@ -47,6 +47,12 @@
   \textbf{#1}
 }
 
+\newcommand{\team}[1]{
+  \hspace{-2mm}
+  \fontsize{10.5pt}{12pt}
+  \selectfont#1
+}
+
 \newcommand{\positiondate}[1]{
   \hfill
   \fontsize{10.5pt}{12pt}

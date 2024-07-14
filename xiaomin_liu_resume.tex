@@ -1,4 +1,4 @@
-\documentclass{resume}
+\documentclass{xiaomin_liu_resume}
 
 \begin{document}
 
@@ -14,37 +14,42 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Education}
 
-\subsection{New York University} \positiondate{\textit{May 2026}}\\
+\subsection{New York University}\positiondate{\textit{May 2026}}\\
 \fontsize{10.5pt}{12pt}\selectfont
-\textbf{Bachelor of Arts}, Computer Science\hfill New York, NY\\
+Bachelor of Arts in Computer Science\hfill New York, NY\\
 \textbf{GPA:} 3.8\\
 \textbf{Activities and Honors:} Presidential Honors Scholars Program (Top 10\%) | CAS Scholarship (full-ride) |\\
 \hspace*{37.5mm}\href{https://bugsnyu.com/}{\underline{BUGS@NYU}} (Open Source Club) Developer | \href{https://techatnyu.org/techtreks}{\underline{Tech@NYU}} Tech Trek Mentor\\
 \textbf{Relevant Coursework:} Data Structures | Fundamental Algorithms (TA) | Operating Systems | Parallel Programming |\\
-\hspace*{37.5mm}Programming Languages (Graduate) | Computer Systems Organization
+\hspace*{37.5mm}Programming Languages (Graduate-level) | Computer Systems Organization
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Experience
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experience}
 
-\subsection{Niantic}- Software Engineering Intern \positiondate{May 2024 - Present}\\
-\technologies{Java, C\#, Unity, Google Cloud Platform, gRPC}\hfill Bellevue, WA\\
+% \subsection{Google}- Incoming Software Engineer Intern \positiondate{Summer 2025}\\
+% \technologies{}\hfill New York, NY
+
+\subsection{Niantic}- Software Engineer Intern\team{(Pokémon GO: Maps/Explore/AR Team)} \positiondate{May 2024 - Present}\\
+\technologies{Java, C\#, Unity, Google Cloud Platform, SQL, gRPC, Apache Beam, Google BigQuery}\hfill Bellevue, WA\\
 \begin{tightemize}
-\item Joining the Pokémon GO: Maps/Explore/AR Team
+\item Processing OpenStreetMap water-polygon geodata with Google BigQuery to eliminate an estimated 10\% of unnecessary ocean spatial entities in spawn point, POI, and weather Apache Beam dataflows
+\item Developed a distributed, parallel quadtree merging algorithm for normalizing S2 cells, compressing ocean geodata from 4 billion (25 GB) to 8 million rows (10 MB) to achieve a $\sim$99.96\% storage reduction while preserving area coverage
+\item Integrated Sentry into Pokémon GO's Debug menu to to gather \href{https://docs.sentry.io/product/user-feedback/}{\underline{User Feedback}} and capture additional relevant metadata such as build type, trainer name, and app version to streamline the bug triaging process
 \end{tightemize}
 
 \subsection{New York University}- Research Assistant \positiondate{Mar 2024 - May 2024}\\
 \technologies{Python, pandas, Google AppSheet, Google Sheets API, Legiscan API}\hfill New York, NY\\
 \begin{tightemize}
 \item Automated the process to add and update legislative bills to Google Sheets, saving 10+ hours of weekly searches
-\item Increased the number of tracked bills by 175\% (from 400 to 1,100) by building a Legiscan API client and a cron-based Python script to retrieve the latest bill information from Legiscan every week
+\item Built a Legiscan API client running on a cron-based Python script, increasing the number of tracked bills by 175\% by retrieving the latest bill information from Legiscan every week
 \end{tightemize}
 
-\subsection{Vantage}- Software Engineering Intern \positiondate{July 2023 - Oct 2023}\\
+\subsection{Vantage}- Software Engineer Intern \positiondate{July 2023 - Oct 2023}\\
 \technologies{Ruby, Ruby on Rails, JavaScript, HTML, PostgreSQL, Azure, Temporal}\hfill New York, NY\\
 \begin{tightemize}
-\item Launched \href{https://www.vantage.sh/blog/vantage-launches-azure-active-resources}{\underline{Azure Active Resources}}, an Azure resource utilization and costs tracking feature that enables 6,500+ users to cut down on spending by identifying and eliminating inactive resources still incurring costs
+\item Launched \href{https://www.vantage.sh/blog/vantage-launches-azure-active-resources}{\underline{Azure Active Resources}}, an Azure resource utilization and costs tracking feature that enables 20,000+ users to cut down on spending by identifying and eliminating inactive resources still incurring costs
 \item Designed and built a Temporal pipeline that concurrently updates \textasciitilde100,000 records by leveraging Azure's REST APIs to fetch resource metadata across 30+ different Azure services
 \item Secured a two year, \$125,000/year contract with our biggest Azure client with the Azure Active Resources release
 \item Integrated line graphs using HTML, JavaScript, and Chart.js to visualize related resource costs over 30-day periods
@@ -57,12 +62,6 @@
 [\href{http://github.com/xl4624}{\raisebox{.4mm}{[github.com/xl4624]\hspace{3mm}}}]
 {Projects}
 
-\subsection{RCC (Current)}\\
-\technologies{Rust, C, LLVM}\\
-\begin{tightemize}
-\item Engineering a C Compiler with a handwritten lexer and recursive descent parser for generating LLVM IR
-\end{tightemize}
-
 \subsection{Chess with Friends}\\
 \technologies{Python, Flask, JavaScript, Socket.IO, PostgreSQL, HTML, CSS, Docker}\\
 \begin{tightemize}
@@ -70,19 +69,17 @@
 \item Implemented real-time updates to the chessboard and move history table using Flask and Socket.IO, and added a chat feature for players to communicate during matches using JavaScript and HTML
 \end{tightemize}
 
-% TODO: Remove this in place for Database Engine
-\subsection{Debugging Memory Allocator}\\
-\technologies{C++}\\
-\begin{tightemize}
-\item Created a memory allocator in C++ using a linear, sorted free list of metadata headers to manage memory blocks
-\item Implemented methods for splitting oversized freed memory blocks and coalescing adjacent blocks
-\end{tightemize}
+% \subsection{Debugging Memory Allocator}\\
+% \technologies{C++}\\
+% \begin{tightemize}
+% \item Created a memory allocator in C++ using a linear, sorted free list of metadata headers to manage memory blocks
+% \item Implemented methods for splitting oversized freed memory blocks and coalescing adjacent blocks
+% \end{tightemize}
 
-% TODO: Remove this
 \subsection{Sudoku Solver}\\
 \technologies{Go, JSON, HTTP}\\
 \begin{tightemize}
-\item Developed a CLI web scraper that fetches and solves the latest Sudoku puzzles from \href{https://sudoku.com.au/}{\underline{sudoku.au}} using a depth-first search backtracking algorithm prioritizing the most constraining cell
+\item Built a CLI web scraper that fetches and solves the latest Sudoku puzzles from \href{https://sudoku.com.au/}{\underline{sudoku.au}} using a depth-first search backtracking algorithm prioritizing the most constraining cell
 \end{tightemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -93,7 +90,8 @@
 \fontsize{10.5pt}{12pt}\selectfont
 \vspace{-1mm}
 \textbf{Languages:} Python, Rust, Java, C, C++, JavaScript/TypeScript, Ruby, HTML, SQL, CSS\\
-\textbf{Technologies:} pandas, NumPy, Ruby on Rails, React, Flask, Django, PostgreSQL, MongoDB, Git, Docker, Azure, Vim\\
+\textbf{Technologies:} pandas, NumPy, Ruby on Rails, React, Flask, Django, PostgreSQL, MongoDB, Git, Docker, Azure, GCP\\
 \textbf{Concepts:} Software Engineering, Data Structures and Algorithms, Backend, Full Stack, Web Development, API Development, UNIX Environment, DevOps, Game Development, Compilers, Augmented Reality, Distributed Systems
 
 \end{document}
+
