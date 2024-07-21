@@ -10,6 +10,7 @@
 \usepackage{enumitem}
 \fontspec{Lato}
 \thispagestyle{empty}
+\sloppy  % removes long words from overlapping the right margin
 
 \usepackage{selnolig}
 \nolig{ti}{t|i}
@@ -64,6 +65,7 @@
   \fontsize{10.5pt}{12pt}
   \selectfont
   \textcolor{light}{\textit{#1}}
+  \vspace{2pt}
 }
 
 \newcommand{\body}[1]{
@@ -82,4 +84,5 @@
     \parsep0pt
     }{
   \end{itemize}
+  \vspace{1.5pt}
 }
