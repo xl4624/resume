@@ -1,0 +1,221 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\usepackage{textcomp}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+\renewcommand{\bfdefault}{eb}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-0.55in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, rightmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-0pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% ----------HEADING----------
+\begin{center}
+    \textbf{\Huge Xiaomin Liu}\\ \vspace{2pt}
+    \small \href{mailto:xl4624@nyu.edu}{\underline{xl4624@nyu.edu}} $|$ 
+    \href{https://linkedin.com/in/xiaomin-liu}{\underline{linkedin.com/in/xiaomin-liu}} $|$
+    \href{https://github.com/xl4624}{\underline{github.com/xl4624}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {New York University}{May 2026}
+      {Bachelor of Arts in Computer Science (with Honors) and Mathematics}
+      {\textbf{GPA}: 3.8}
+      {}
+    \resumeItem{Coursework: Data Structures, Algorithms, Operating Systems, Programming Languages (Graduate level), Parallel Computing}
+    
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {New York University High Speed Research Network Lab}{Aug 2024 -- Present}{Software Engineer --- CoreLink Server Team}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Implementing features and services in Rust for Corelink, a low-latency networking framework for research applications}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {New York University Courant Institute}{Aug 2024 -- Present}{Teaching Assistant}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Conducting weekly office hours and grade assessments for Basic Algorithms (CSCI-UA 310) supporting over 50 students}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Niantic}{May 2024 -- Aug 2024}
+      {Software Engineer Intern --- Pokémon GO: Maps/Explore/AR Team}{Bellevue, WA}
+      \resumeItemListStart
+        \resumeItem{Processed coastline data with BigQuery to define an ocean dataset, eliminating 8 billion (40\% total) Pokémon spawnpoints}
+        \resumeItem{Reduced weather API calls by 78\% by implementing logic in Java to invalidate ocean weather cells, saving \$280k annually}
+        \resumeItem{Developed a distributed quadtree merging algorithm to normalize S2 cells in Apache Beam, compressing geodata by 99.1\%}
+        \resumeItem{Integrated Sentry into Pokémon GO's client using C\#, .NET and Unity to monitor unhandled exceptions and crashes, capturing 1.4M daily errors alongside relevant metadata for improved diagnostics}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {New York University Center on Race, Inequality, and the Law}{Mar 2024 -- May 2024}
+      {Research Assistant}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Automated legislative bill searching and tracking process to Google Sheets, saving 10+ weekly hours of manual searches}
+        \resumeItem{Built a Legiscan API client in  Python and pandas to increase tracked bills by 175\% and provide real-time status updates}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {\href{https://www.vantage.sh/}{\underline{Vantage.sh}}}{July 2023 -- Oct 2023}
+      {Software Engineer Intern}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Launched \href{https://www.vantage.sh/blog/vantage-launches-azure-active-resources}{\underline{Azure Active Resources}}, a Ruby on Rails feature filtering Azure spending by resource metadata for 20,000 users}
+        \resumeItem{Designed a Temporal Workflow to concurrently fetch 100,000+ records of resource metadata from 30 Azure services}
+        \resumeItem{Integrated multi-series line graphs using HTML and JavaScript to visualize related resource costs over 30-day periods}
+      \resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}https://www.overleaf.com/project/65201aa462f12c8445ded484
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+ 
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\href{https://github.com/xl4624/S2shell}{\textbf{\underline{S2shell}}} $|$ Rust, C++}{}
+          \resumeItemListStart
+            \resumeItem{Ported Google's S2 Geometry Library to Rust for robust computational geometry and spacial indexing on the sphere}
+            \resumeItem{Implemented core S2 data structures and algorithms including S2Point, S2CellId, S2Cell, and S2Region}
+            \resumeItem{Created a custom linear algebra module supporting 2D/3D vector operations like dot products, cross products, etc.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\href{https://github.com/xl4624/chess-with-friends}{\textbf{\underline{Multiplayer Chess}}} $|$ Python, Flask, JavaScript, WebSocket, SQL (PostgreSQL), HTML, CSS, Docker}{}
+          \resumeItemListStart
+            \resumeItem{Led a team of 3 in developing an online multiplayer chess website where users can play against each other via links}
+            \resumeItem{Implemented real-time board updates, a dynamic move history table, and a chat feature using JavaScript and HTML}
+            \resumeItem{Challenges included verifying moves, handling spectators joining mid-game, and asynchronous move broadcasting}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+%----------- SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Rust, Java, C, C++, C\#, JavaScript, TypeScript, Ruby, SQL, HTML, Bash, CSS} \\
+     \textbf{Technologies}{: Pandas, NumPy, Unity, .NET, Django, Flask, Docker, Azure, GCP (BigQuery, Dataflow, GCS), Sentry, Linux} \\
+     \textbf{Concepts:} System Design, Computer Networking, Distributed Systems, Compilers, REST APIs, Backend, Unit Testing}}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
