@@ -38,6 +38,7 @@
 % \usepackage{charter}
 
 
+\setlength{\footskip}{4.08003pt}
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -48,7 +49,7 @@
 \addtolength{\oddsidemargin}{-0.7in}
 \addtolength{\evensidemargin}{-0.7in}
 \addtolength{\textwidth}{1.4in}
-\addtolength{\topmargin}{-0.55in}
+\addtolength{\topmargin}{-0.4in}
 \addtolength{\textheight}{1.2in}
 
 \urlstyle{same}
@@ -59,7 +60,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-4pt}\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
@@ -122,10 +123,10 @@
   
     \resumeSubheading
       {New York University}{May 2026}
-      {Bachelor of Arts in Computer Science (with Honors) and Mathematics}
-      {\textbf{GPA}: 3.8}
+      {Bachelor of Arts in Computer Science (with Honors)}
+      {\textbf{GPA:} 3.8}
       {}
-    \resumeItem{Coursework: Data Structures, Algorithms, Operating Systems, Programming Languages (Graduate level), Parallel Computing}
+    \resumeItem{Coursework: Operating Systems, Programming Languages (Grad level), Database Systems (Grad level), Parallel Computing}
     
   \resumeSubHeadingListEnd
 
@@ -135,38 +136,37 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-    {New York University High Speed Research Network Lab}{Sep 2024 -- Present}{Software Engineer Intern --- Corelink Server Team}{New York, NY}
+    {\href{https://vip.hsrn.nyu.edu/}{\underline{NYU High Speed Research Network Lab}}}{Sep 2024 -- Present}{Research Assistant (Corelink Server)}{New York, NY}
       \resumeItemListStart
         \resumeItem{Implementing features and services in Rust for Corelink, a low-latency networking framework for research applications}
       \resumeItemListEnd
 
     \resumeSubheading
-    {New York University Courant Institute of Mathematical Sciences}{Sep 2024 -- Present}{Teaching Assistant}{New York, NY}
+    {NYU Courant Institute of Mathematical Sciences}{Sep 2024 -- Present}{Teaching Assistant}{New York, NY}
       \resumeItemListStart
-        \resumeItem{Conducting weekly office hours and grading assessments for Basic Algorithms (CSCI-UA 310) supporting over 50 students}
+        \resumeItem{Conducting weekly office hours and grading assessments for Basic Algorithms (CSCI-UA 310), supporting 100+ students}
       \resumeItemListEnd
 
     \resumeSubheading
       {Niantic}{May 2024 -- Aug 2024}
-      {Software Engineer Intern --- Pokémon GO: Maps/Explore/AR Team}{Bellevue, WA}
+      {Software Engineering Intern (Pokemon GO: Maps/Explore/AR Team)}{Bellevue, WA}
       \resumeItemListStart
-        \resumeItem{Processed coastline data with BigQuery to define an ocean dataset, eliminating 8 billion (40\% total) Pokémon spawnpoints}
+        \resumeItem{Processed coastline data with BigQuery to define an ocean dataset, eliminating 8 billion (40\% total) Pokemon spawnpoints}
         \resumeItem{Reduced weather API calls by 78\% by implementing logic in Java to invalidate ocean weather cells, saving \$280k annually}
         \resumeItem{Developed a distributed quadtree merging algorithm to normalize S2 cells in Apache Beam, compressing geodata by 99.1\%}
-        \resumeItem{Integrated Sentry into Pokémon GO's client using C\#, .NET and Unity to monitor unhandled exceptions and crashes, capturing 1.4M daily errors alongside relevant metadata for improved diagnostics}
+        \resumeItem{Integrated Sentry into Pokemon GO's client using C\#, .NET and Unity to monitor unhandled exceptions and crashes}
       \resumeItemListEnd
       
     \resumeSubheading
-      {New York University Center on Race, Inequality, and the Law}{Mar 2024 -- May 2024}
+      {\href{https://www.law.nyu.edu/centers/race-inequality-law}{\underline{NYU Center on Race, Inequality, and the Law}}}{Mar 2024 -- May 2024}
       {Research Assistant}{New York, NY}
       \resumeItemListStart
-        \resumeItem{Automated legislative bill searching and tracking process to Google Sheets, saving 10+ weekly hours of manual searches}
-        \resumeItem{Built a Legiscan API client in  Python and pandas to increase tracked bills by 175\% and provide real-time status updates}
+        \resumeItem{Built a Legiscan API client in Python and pandas to automate the legislative bill searching and tracking process to Google Sheets, saving lawyers 10+ hours a week on manual searches and increasing number of tracked bills by 175\%}
       \resumeItemListEnd
       
     \resumeSubheading
       {\href{https://www.vantage.sh/}{\underline{Vantage.sh}}}{July 2023 -- Oct 2023}
-      {Software Engineer Intern}{New York, NY}
+      {Software Engineering Intern}{New York, NY}
       \resumeItemListStart
         \resumeItem{Launched \href{https://www.vantage.sh/blog/vantage-launches-azure-active-resources}{\underline{Azure Active Resources}}, a Ruby on Rails feature filtering Azure spending by resource metadata for 20,000 users}
         \resumeItem{Designed a Temporal Workflow to concurrently fetch 100,000+ records of resource metadata from 30 Azure services}
@@ -196,6 +196,7 @@
             \resumeItem{Implemented core S2 data structures and algorithms including S2Point, S2CellId, S2Cell, and S2Region}
             \resumeItem{Created a custom linear algebra module supporting 2D/3D vector operations like dot products, cross products, etc.}
           \resumeItemListEnd
+
         \resumeProjectHeading
           {\href{https://github.com/xl4624/chess-with-friends}{\textbf{\underline{Multiplayer Chess}}} $|$ Python, Flask, JavaScript, WebSocket, SQL (PostgreSQL), HTML, CSS, Docker}{}
           \resumeItemListStart
@@ -212,8 +213,8 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Python, Rust, Java, C, C++, C\#, JavaScript, TypeScript, Ruby, SQL, HTML, Bash, CSS} \\
-     \textbf{Technologies}{: Pandas, NumPy, Unity, .NET, Django, Flask, Docker, Azure, GCP (BigQuery, Dataflow, GCS), Sentry, Linux} \\
-     \textbf{Concepts:} System Design, Computer Networking, Distributed Systems, Compilers, REST APIs, Backend, Unit Testing}}
+     \textbf{Technologies}{: pandas, NumPy, Unity, .NET, Django, Flask, Docker, Azure, GCP (BigQuery, Dataflow, GCS), Sentry, Linux} \\
+     \textbf{Concepts:} Computer Networking, Distributed Systems, Computer, Backend, Compilers, Unit Testing, Web Development}}
  \end{itemize}
 
 
