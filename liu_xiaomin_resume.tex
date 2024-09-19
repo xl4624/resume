@@ -5,7 +5,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,12pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -49,7 +49,7 @@
 \addtolength{\oddsidemargin}{-0.7in}
 \addtolength{\evensidemargin}{-0.7in}
 \addtolength{\textwidth}{1.4in}
-\addtolength{\topmargin}{-0.4in}
+\addtolength{\topmargin}{-0.6in}
 \addtolength{\textheight}{1.2in}
 
 \urlstyle{same}
@@ -67,7 +67,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-3pt}}
   }
 }
 
@@ -126,7 +126,8 @@
       {Bachelor of Arts in Computer Science (with Honors)}
       {\textbf{GPA:} 3.8}
       {}
-    \resumeItem{Coursework: Operating Systems, Programming Languages (Grad level), Database Systems (Grad level), Parallel Computing}
+    \resumeItem{\textbf{Coursework}: Operating Systems, Database Systems (grad), Programming Languages (grad), Parallel Computing\\
+    \textbf{Honors/Awards}: Presidential Honor Scholar (top 10\% of class), College of Arts and Sciences Scholarship (full-ride)}
     
   \resumeSubHeadingListEnd
 
@@ -142,42 +143,42 @@
     % \resumeItemListEnd
 
     \resumeSubheading
-    {\href{https://vip.hsrn.nyu.edu/}{\underline{NYU High Speed Research Network Lab}}}{Sep 2024 -- Present}{Research Assistant (Corelink Server)}{New York, NY}
+    {\href{https://vip.hsrn.nyu.edu/}{\underline{NYU High Speed Research Network Lab}}}{Sep 2024 -- Present}{Research Assistant}{New York, NY}
       \resumeItemListStart
-        \resumeItem{Implementing features and services in Rust for Corelink, a low-latency networking framework for research applications}
+        \resumeItem{Implementing features in Rust for Corelink, a low-latency networking framework for research applications}
       \resumeItemListEnd
 
     \resumeSubheading
     {NYU Courant Institute of Mathematical Sciences}{Sep 2024 -- Present}{Teaching Assistant}{New York, NY}
       \resumeItemListStart
-        \resumeItem{Holding weekly office hours and grading assessments for Basic Algorithms (CSCI-UA 310), supporting 100+ students}
+        \resumeItem{Holding weekly office hours and grading assignments for over 100 students in CSCI-UA 310: Basic Algorithms}
       \resumeItemListEnd
 
     \resumeSubheading
       {Niantic}{May 2024 -- Aug 2024}
-      {Software Engineering Intern (Pokemon GO: Maps/Explore/AR Team)}{Bellevue, WA}
+      {Software Engineering Intern --- Pokémon GO: Maps/Explore/AR Team}{Bellevue, WA}
       \resumeItemListStart
-        \resumeItem{Processed coastline data with BigQuery to define an ocean dataset, eliminating 8 billion (40\% total) Pokemon spawnpoints}
-        \resumeItem{Reduced weather API calls by 78\% by implementing logic in Java to invalidate ocean weather cells, saving \$280k annually}
-        \resumeItem{Developed a distributed quadtree merging algorithm to normalize S2 cells in Apache Beam, compressing geodata by 99.1\%}
-        \resumeItem{Integrated Sentry into Pokemon GO's client using C\#, .NET and Unity to monitor unhandled exceptions and crashes}
+        \resumeItem{Processed coastline data in BigQuery to define invalid ocean regions, removing 8 billion Pokémon spawnpoints}
+        \resumeItem{Reduced weather API calls by 78\% by implementing Java logic to disable ocean updates, saving \$280k annually}
+        \resumeItem{Developed a distributed quadtree merging algorithm using Apache Beam, compressing ocean geodata by 99.1\%}
+        \resumeItem{Integrated Sentry into Pokémon GO's client using C\#, .NET and Unity to monitor unhandled exceptions/crashes}
       \resumeItemListEnd
       
     \resumeSubheading
       {\href{https://www.law.nyu.edu/centers/race-inequality-law}{\underline{NYU Center on Race, Inequality, and the Law}}}{Mar 2024 -- May 2024}
       {Research Assistant}{New York, NY}
       \resumeItemListStart
-        \resumeItem{Automated the legislative bill searching process to Google Sheets, saving lawyers 10+ hours a week on manual searches}
-        \resumeItem{Built a Legiscan API client in Python and pandas to increase tracked bills by 175\% and provide accurate bill status updates}
+        \resumeItem{Automated the bill searching process to Google Sheets, saving lawyers 10+ hours a week on manual searches}
+        \resumeItem{Developed a Legiscan API client with Python and Pandas to increase bills by 175\% and track status updates}
       \resumeItemListEnd
       
     \resumeSubheading
-      {\href{https://www.vantage.sh/}{\underline{Vantage.sh}}}{July 2023 -- Oct 2023}
+      {\href{https://www.vantage.sh/}{\underline{Vantage}}}{July 2023 -- Oct 2023}
       {Software Engineering Intern}{New York, NY}
       \resumeItemListStart
-        \resumeItem{Launched \href{https://www.vantage.sh/blog/vantage-launches-azure-active-resources}{\underline{Azure Active Resources}}, a Ruby on Rails feature filtering Azure spending by resource metadata for 20,000 users}
-        \resumeItem{Designed a Temporal Workflow to concurrently fetch 100,000+ records of resource metadata from 30 Azure services}
-        \resumeItem{Integrated multi-series line graphs using HTML and JavaScript to visualize related resource costs over 30-day periods}
+        \resumeItem{Launched \href{https://www.vantage.sh/blog/vantage-launches-azure-active-resources}{\underline{Azure Active Resources}}, a Ruby on Rails feature that filters Azure spending by resource metadata}
+        \resumeItem{Designed a Temporal Workflow to concurrently retrieve 100,000+ metadata records from 30 Azure services}
+        \resumeItem{Added multi-series line graphs using HTML and JavaScript to visualize resource costs over 30-day periods}
       \resumeItemListEnd
 
 % -----------Multiple Positions Heading-----------
@@ -199,29 +200,36 @@
         \resumeProjectHeading
           {\href{https://github.com/xl4624/S2shell}{\textbf{\underline{S2shell}}} $|$ Rust, C++}{}
           \resumeItemListStart
-            \resumeItem{Ported Google's S2 Geometry Library to Rust for robust computational geometry and spacial indexing on the sphere}
-            \resumeItem{Implemented core S2 data structures and algorithms including S2Point, S2CellId, S2Cell, and S2Region}
-            \resumeItem{Created a custom linear algebra module supporting 2D/3D vector operations like dot products, cross products, etc.}
+            \resumeItem{Ported Google's S2 Geometry Library to Rust for robust computational geometry and spatial indexing}
+            \resumeItem{Created a custom linear algebra module supporting 2D and 3D vector operations like dot and cross products}
           \resumeItemListEnd
 
         \resumeProjectHeading
           {\href{https://github.com/xl4624/chess-with-friends}{\textbf{\underline{Multiplayer Chess}}} $|$ Python, Flask, JavaScript, WebSocket, SQL (PostgreSQL), HTML, CSS, Docker}{}
           \resumeItemListStart
-            \resumeItem{Led a team of 3 in developing an online multiplayer chess website where users can play against each other via links}
-            \resumeItem{Implemented real-time board updates, a dynamic move history table, and a chat feature using JavaScript and HTML}
-            \resumeItem{Challenges included verifying moves, handling spectators joining mid-game, and asynchronous move broadcasting}
+            \resumeItem{Led a team of 3 in developing an online multiplayer chess website where users can challenge others via links}
+            \resumeItem{Implemented real-time board updates, move history table, and chat feature using JavaScript and HTML}
           \resumeItemListEnd
-          
+
     \resumeSubHeadingListEnd
 
+% \section{Extracurriculars}
+%     \resumeSubHeadingListStart
+%         \resumeProjectHeading
+%           {Participant, \textbf{Amazon Campus Summer Series 2024}}{}
+%         \resumeProjectHeading
+%           {Member, \href{https://bugsnyu.com/}{\textbf{\underline{BUGS @ NYU (Open Source Club)}}}}{}
+%
+%     \vspace{8pt}
+%     \resumeSubHeadingListEnd
 
 %----------- SKILLS-----------
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, Rust, Java, C, C++, C\#, JavaScript, TypeScript, Ruby, SQL, Shell, HTML, CSS} \\
-     \textbf{Technologies}{: pandas, NumPy, Unity, .NET, Django, Flask, Docker, Azure, GCP (BigQuery, Dataflow, GCS), Sentry, Linux} \\
-     \textbf{Concepts:} Computer Networking, Distributed Systems, Backend, Compilers, Cloud Computing, Unit Testing, Web Development}}
+     \textbf{Languages}{: Python, Rust, Java, C, C++, C\#, JavaScript, TypeScript, Ruby, SQL, HTML, CSS} \\
+     \textbf{Technologies}{: Pandas, NumPy, Unity, .NET, Django, Flask, Docker, Azure, GCP (BigQuery, Dataflow, GCS), Linux} \\
+     \textbf{Concepts:} Computer Networking, Distributed Systems, Backend, Cloud Computing, Web Development, Compilers}}
  \end{itemize}
 
 
