@@ -1,6 +1,7 @@
+anon/
 *.aux
+*.fls
 *.log
 *.out
-*.tex
 *.py
-anon/
+*.tex
