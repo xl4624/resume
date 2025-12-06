@@ -138,7 +138,7 @@
       \vspace{2pt}
 
     \resumeSubheading
-      {Apple}{Jan 2026 -- May 2026}{Incoming Machine Learning Compiler Engineer Intern}{Sunnyvale, CA}
+      {Apple}{Jan 2026 -- May 2026}{Machine Learning Compiler Engineer Intern}{Sunnyvale, CA}
       \resumeItemListStart
         \resumeItem{Working on the MLIR compiler for the Apple Neural Engine to accelerate on-device AI inference across billions of devices}
       \resumeItemListEnd
@@ -146,8 +146,8 @@
     \resumeSubheading
       {Google}{Aug 2025 -- Nov 2025}{Software Engineer Intern}{Sunnyvale, CA}
       \resumeItemListStart
-        \resumeItem{Implemented internet flow cache eviction in C++ to offload packet processing to SmartNICs for 300K concurrent flows}
-        \resumeItem{Designed a hybrid LRU/LFU policy that retains long-lived, high-throughput flows while removing stale connections}
+        \resumeItem{Implemented C++ flow cache eviction mechanism for SmartNIC offloading, handling packet processing for 300K flows}
+        \resumeItem{Designed hybrid LRU/LFU policy with weighted heuristics to retain high-throughput flows and minimize packet reordering}
         \resumeItem{Optimized flow eviction with a B-tree multimap buffer of low-scoring candidates, reducing CPU cycles per eviction by 57\%}
         \vspace{-10pt}
       \resumeItemListEnd
@@ -187,7 +187,7 @@
           {\textbf{P4 MLIR Compiler (\href{https://github.com/p4lang/p4mlir/pulls?q=sort\%3Aupdated-desc+is\%3Apr+author\%3Axl4624}{\underline{\smash{p4lang/p4mlir}}})} | C++, MLIR, LLVM, P4}{}
           \resumeItemListStart
             \resumeItem{Built constant folding and canonicalization passes for P4's MLIR backend and \href{https://github.com/llvm/llvm-project/pulls?q=sort\%3Aupdated-desc+is\%3Apr+author\%3Axl4624}{\underline{\smash{upstreamed TableGen patches to LLVM}}}}
-            \resumeItem{Implemented graph optimizations to prune dead parser states and merge linear chains, reducing match-table footprint}
+            \resumeItem{Implemented graph optimizations to prune dead parser states and fuse linear chains, reducing match-table footprint}
             \resumeItemListEnd
 
     \resumeSubHeadingListEnd
@@ -197,7 +197,7 @@
 \section{SKILLS}
  \begin{itemize}[leftmargin=0.1in, label={}]
    \item{
-     \textbf{Programming Languages}{: C++, Rust, Python, Java, JavaScript, SQL}\\
+     \textbf{Programming Languages}{: C++, Python, Rust, Java, JavaScript, SQL}\\
      \textbf{Technologies}{: GCP, AWS, PyTorch, MLIR, Temporal, gRPC, Linux, Bash}\\
      \textbf{Interests}{: Systems Programming, Compilers, Distributed Systems, Developer Tooling}}
  \end{itemize}
